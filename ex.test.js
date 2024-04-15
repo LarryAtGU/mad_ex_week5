@@ -180,9 +180,9 @@ describe("Question 5: Shopping Cart Functionality with Direct Access Getters", (
   test("check returns correct item number and total price", () => {
     cart.addItem(1, "Apple", 0.99);
     cart.addItem(2, "Banana", 0.59);
-    const { itemNumber, total } = cart.check();
+    const { itemNumber, totalPrice } = cart.check();
 
     expect(itemNumber).toBe(2);
-    expect(total).toBeCloseTo(1.58);
+    expect(totalPrice).toBeCloseTo(1.58);
   });
 });
